@@ -52,18 +52,19 @@ app.use(cors());
 // other methods are available, like res.render() to render a template, or res.redirect() to redirect to another url
 // see the express docs for more info: https://expressjs.com/en/api.html#res
 app.get("/", (req, res) => {
-  request(
-    req.query.url_io,
-    // 'ya.ru/',
-    (error, response, body) => {
-        if (error)
-            return res
-                .status(500)
-                .send({ message: error });
+  res.send("Dadadf")
+//   request(
+//     req.query.url_io,
+//     // 'ya.ru/',
+//     (error, response, body) => {
+//         if (error)
+//             return res
+//                 .status(500)
+//                 .send({ message: error });
 
-        return res.send(JSON.stringify(response.body));
-    }
-);
+//         return res.send(JSON.stringify(response.body));
+//     }
+// );
 });
 
 
