@@ -10,7 +10,7 @@ const app = express();
 // app.use("/", ExampleRouter);
 
 
-app.use(cors());
+//app.use(cors());
 
 // Middleware is a function that runs on every request that is sent to your app.
 // It can be used to modify the request or response objects, or to run some code
